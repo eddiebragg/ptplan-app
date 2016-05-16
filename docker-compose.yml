@@ -2,7 +2,7 @@ db:
   image: postgres
 web:
   build: .
-  command: python scoreit/manage.py runserver 0.0.0.0:8000
+  command: python ptplan/manage.py runserver 0.0.0.0:8000
   volumes:
     - .:/code
   ports:
